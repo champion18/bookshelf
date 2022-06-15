@@ -1,0 +1,78 @@
+footer {
+  margin-top: 3vmax;
+  /* padding: 16vmax; */
+  /* background-color: rgb(34, 33, 33); */
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  max-height: 28vh;
+  padding: 30vh 0;
+}
+
+.leftFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > span {
+  font-family: "Gill Sans MT", sans-serif;
+  font-size: 1.4vmax;
+}
+.leftFooter > p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Gill Sans MT", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", sans-serif;
+}
+.leftFooter > img {
+  width: 10vmax;
+  margin-top: 1.4vmax;
+  cursor: pointer;
+}
+
+.midFooter {
+  width: 60%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 4.5vmax;
+  /* font-family: "Roboto"; */
+  color: #fff;
+  /* font-size: 40px; */
+  font-weight: 500;
+  font-family: "Niconne", "Roboto", sans-serif;
+
+  color: white;
+}
+.midFooter > p {
+  max-width: 60%;
+
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter > p,
+.socialinks > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans MT", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+.socialinks {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

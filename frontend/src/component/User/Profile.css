@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0%;
+  margin-top: 10vh;
+  left: 0%;
+  max-width: 100%;
+  background-color: white;
+}
+
+.profileContainer > div {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContainer > div:first-child > h1 {
+  /* color: rgba(0, 0, 0, 0.555);
+  font: 500 2.2vmax "Roboto";
+  transform: translateX(-10vmax) translateY(-2vmax); */
+
+  color: rgb(219 182 48);
+  font: 500 2.5vmax "Montserrat";
+  margin-bottom: 10vh;
+  /* transform: translateX(-10vmax) translateY(-2vmax);*/
+}
+
+.profileContainer > div:first-child > img {
+  /* width: 20vmax;
+  border-radius: 100%;
+  transition: all 0.5s; */
+
+  width: 15vmax;
+  height: 15vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.profileContainer > div:first-child > img:hover {
+  transform: scale(1.05);
+}
+
+.profileContainer > div:first-child > a:hover {
+  background-color: rgb(204, 78, 56);
+}
+
+.profileContainer > div:last-child {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 3.5vmax;
+  box-sizing: border-box;
+}
+
+.profileContainer > div:last-child > div > h4 {
+  color: black;
+  font: 400 1vmax "Roboto";
+}
+
+.profileContainer > div:last-child > div > p {
+  font: 400 2vmax "Montserrat";
+  margin: 0.2vmax;
+}
+
+.profileContainer > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.profileContainer > div:last-child > div:last-child > a {
+  border: none;
+  background-color: black;
+  font: 400 1vmax "Montserrat";
+  color: white;
+  text-decoration: none;
+  padding: 0.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 1vmax 0;
+  border-radius: 3vh;
+}
+
+.profileContainer > div:last-child > div:last-child > a:hover {
+  background-color: rgb(219 182 48);
+}
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+
+  .profileContainer > div {
+    display: flex;
+    height: 38vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileContainer > div:first-child > h1 {
+    color: rgba(0, 0, 0, 0.555);
+    font: 500 2.5vmax "Montserrat";
+    margin-bottom: 3vh;
+  }
+
+  .profileContainer > div:first-child > a {
+    font: 400 1.7vmax "Montserrat";
+    padding: 1vmax;
+  }
+
+  .profileContainer > div:last-child {
+    text-align: center;
+    align-items: center;
+  }
+
+  .profileContainer > div:last-child > div > h4 {
+    font: 400 2.5vmax "Roboto";
+  }
+
+  .profileContainer > div:last-child > div > p {
+    font: 400 2vmax "Montserrat";
+    margin: 1.5vmax 0;
+  }
+
+  .profileContainer > div:last-child > div:last-child > a {
+    font: 400 1.8vmax "Montserrat";
+    padding: 1vmax;
+    margin: 2vmax 0;
+  }
+}

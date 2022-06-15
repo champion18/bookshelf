@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Courgette");
+@import url("https://fonts.googleapis.com/css?family=Niconne");
+
+.home {
+  /* background-image: url(../../images/home-cover.jpg);*/
+  /* opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  top: 0%;
+  margin-top: 10vh;
+  left: 0%;
+  max-width: 100%;
+  /* z-index: 1; */
+}
+
+.banner {
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  height: 67vh;
+  /* width: 140vw; */
+  max-width: 100%;
+  margin-bottom: 5vh;
+  margin-left: 5vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../images/bg.jpg);
+}
+
+.homeText {
+  display: flex;
+  height: 45vh;
+  /* width: 120vw; */
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 45vh;
+  margin-right: 5vh;
+  margin-top: -4vh;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.homeText > p {
+  margin-top: 8vh;
+  /* font: 300 2vmax "Montserrat"; */
+  font: 200 3vmax "Niconne";
+}
+
+.homeText > h1 {
+  margin-top: 2vh;
+}
+
+.home .banner > h1 {
+  margin: 6vmax;
+  font: 600 2.5vmax "Roboto";
+}
+
+.home .homeText > a > button {
+  margin-bottom: 2vmax;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+  margin-top: 2vh;
+  border-radius: 30px;
+}
+
+.home .homeText > a > button:hover {
+  background-color: rgb(219 182 48);
+  cursor: pointer;
+}
+
+.homeHeading {
+  text-align: center;
+  font: 200 3vmax "Niconne";
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 35vmax;
+  padding: 1vmax;
+  margin: 4vmax auto 2vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 1vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  /* width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax; */
+
+  width: 16vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-height: 25vmax;
+  padding: 0.5vmax;
+}
+
+.productCard > img {
+  width: 10vmax;
+  margin: 0.5vmax 0.5vmax 0.5vmax 2.4vmax;
+  min-height: 13vmax;
+  max-height: 15vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 1vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  overflow: hidden;
+  max-height: 3vmax;
+}
+
+.productCard > span > b {
+  margin: 0 0.5vmax 0.5vmax 0.5vmax;
+  color: #cf2225;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+.mustread {
+  background-image: url(../../images/New-Books-Calendar-Best-New-Books-January-2022.webp);
+  height: 65vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* display: flex; */
+  /* height: 67vh; */
+  /* width: 140vw; */
+  /* max-width: 100%; */
+  margin: 3vw 5vh 8vw 20vh;
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.3vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    font: 300 1.8vmax "Roboto";
+  }
+
+  .home {
+    margin-top: 19vh;
+    margin-left: -42px;
+  }
+
+  .homeText {
+    display: flex;
+    height: 45vh;
+    /* width: 120vw; */
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 14vh;
+    margin-right: 4vh;
+    margin-top: -6vh;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: flex-start;
+  }
+  .banner {
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    height: 67vh;
+    width: 96vw;
+    max-width: 100%;
+    margin-top: 6vh;
+    margin-left: 7vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mustread {
+    margin-left: 7vh;
+  }
+
+  .home .homeText > a > button {
+    font: 500 1.8vmax "Roboto";
+    padding: 2vmax;
+    width: 12vmax;
+  }
+
+  .productCard > span > b {
+    font-size: 1.8vmax;
+  }
+
+  .socialinks {
+    flex-direction: column;
+  }
+
+  .midFooter > p {
+    margin: 15px auto;
+  }
+}

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.productsHeading {
+  margin: 5vmax auto 1vmax auto;
+  width: 20vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Open Sans";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 18vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.9vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: rgb(219 182 48);
+}
+
+.pageLinkActive {
+  color: black;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 6vmax;
+  left: 3vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2v;
+  min-height: 29vh;
+}
+
+.productsFound {
+  margin-top: 10%;
+  margin-right: 20vmax;
+  font-size: 1vmax;
+  width: 10vmax;
+  font-family: "Roboto";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  height: 6vmax;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.productsFound > span {
+  margin-top: 0.5vmax;
+  font-family: "Roboto";
+}
+
+.productsFound > p > b {
+  margin: 0.8vmax 0;
+  font-family: "Roboto";
+}
+
+#pricerange {
+  margin: 0.5vmax 0;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 1.3vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: rgb(219 182 48);
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .productsHeading {
+    margin: 11vmax auto 1vmax auto;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: flex-start;
+    min-height: 65vh;
+    margin-left: 13vh;
+  }
+  .productsFound {
+    font-size: 1.4vmax;
+    width: 13vmax;
+    height: 8vh;
+  }
+  .filterBox {
+    width: 10vmax;
+    position: absolute;
+    margin-top: 8vh;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}
+
+.categoryBox {
+  margin-top: 1vh;
+}
