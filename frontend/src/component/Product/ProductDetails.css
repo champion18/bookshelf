@@ -188,7 +188,7 @@
   align-items: center;
   margin: 1vmax;
   padding: 3vmax;
-  height: 18vmax;
+  max-height: 25vmax;
 }
 .reviewCard > img {
   width: 5vmax;
@@ -198,9 +198,10 @@
   color: rgba(0, 0, 0, 0.836);
   font: 600 1.2vmax "Roboto";
 }
+
 .reviewCardComment {
   color: rgb(0 0 0 / 77%);
-  font: 300 1vmax sans-serif;
+  font: 300 1.5vmax sans-serif;
   margin-top: 2vh;
 }
 
@@ -214,6 +215,7 @@
   .ProductDetails {
     flex-direction: column;
     height: unset;
+    margin-top: 5vh;
   }
 
   .ProductDetails > div:last-child {
@@ -232,14 +234,22 @@
 
   .detailsBlock-2 {
     justify-content: center;
+    width: auto;
   }
   .detailsBlock-2 > span {
-    font-size: 1.5vmax;
+    font-size: 3.5vmax;
+  }
+
+  .detailsBlock-2-div {
+    font: 200 1.6vmax "Roboto";
+    color: rgba(0, 0, 0, 0.699);
+    margin-left: 1vh;
   }
 
   .detailsBlock-3 > h1 {
     font: 700 3vmax "Franklin Gothic Medium";
     text-align: center;
+    margin-top: 2vmax;
   }
 
   .detailsBlock-3-1 {
@@ -275,6 +285,7 @@
 
   .detailsBlock-4 {
     font: 500 2.5vmax sans-serif;
+    width: 70%;
   }
 
   .detailsBlock-4 > p {
@@ -289,10 +300,11 @@
   }
 
   .reviewCard > p {
-    font: 600 3vw "Roboto";
+    font: 600 2.8vw "Roboto";
   }
+
   .reviewCardComment {
-    font: 300 5vw cursive;
+    font: 300 3vw "Roboto";
   }
 }
 

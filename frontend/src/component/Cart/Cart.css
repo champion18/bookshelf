@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15vh;
 }
 .emptyCart > svg {
   font-size: 5vmax;
@@ -14,6 +15,7 @@
 }
 .emptyCart > p {
   font-size: 2vmax;
+  margin: 2vh;
 }
 .emptyCart > a {
   background-color: rgb(51, 51, 51);
@@ -23,8 +25,12 @@
   cursor: pointer;
   font: 400 1vmax "Roboto";
   text-decoration: none;
+  border-radius: 30px;
 }
 
+.emptyCart > a:hover {
+  background-color: rgb(194, 163, 50);
+}
 .cartPage {
   padding: 5vmax;
   margin-top: 1vmax;
@@ -138,15 +144,21 @@
     min-height: 60vh;
   }
 
+  .emptyCart {
+    margin-top: 4vh;
+  }
+
   .cartHeader {
-    width: 100%;
+    width: 48vh;
     font: 300 1.7vmax "Roboto";
     grid-template-columns: 3fr 1fr 1fr;
+    margin-left: -3vh;
   }
 
   .cartContainer {
-    width: 100%;
+    width: 45vh;
     grid-template-columns: 3fr 1fr 1fr;
+    margin-left: -1vh;
   }
 
   .cartInput {
@@ -158,8 +170,8 @@
   }
 
   .cartInput > input {
-    width: 2vmax;
-    padding: 1.5vmax;
+    width: 4vmax;
+    padding: 0.5vmax;
     font: 400 1.8vmax "Roboto";
   }
 

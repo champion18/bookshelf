@@ -163,6 +163,12 @@ div.logo {
   .go-icon {
     right: 27px;
   }
+
+  .speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 9vmax;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -198,6 +204,14 @@ div.logo {
   .wrapper #show-menu:checked ~ .menu-icon i::before {
     content: "\f00d";
   }
+
+  .content .logo a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Niconne", "Roboto", sans-serif;
+  }
+
   nav .content .links {
     display: block;
     position: fixed;
@@ -255,10 +269,27 @@ div.logo {
     line-height: 30px;
     border-radius: 5px !important;
   }
+
+  .MuiSpeedDial-directionDown {
+    flex-direction: column;
+    top: 9vmax;
+  }
+
+  .speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 9vmax;
+  }
 }
 @media screen and (max-width: 400px) {
   .wrapper nav {
     padding: 0 10px;
+  }
+
+  .speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 9vmax;
   }
   .content .logo a {
     font-size: 27px;
@@ -292,7 +323,7 @@ div.logo {
 .speedDial {
   position: fixed;
   right: 3vmax;
-  top: 5vmax;
+  top: 8vmax;
 }
 
 .speedDialIcon {
